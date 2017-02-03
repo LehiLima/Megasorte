@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.lehi.megasorte.ConferirJogo_Activity"
+                tools:showIn="@layout/activity_conferir_jogo_">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Sem Conexão com a Internet! "
+        android:id="@+id/msg_sem_conexao"
+        android:textSize="26sp"
+        android:visibility="visible"
+        android:layout_marginTop="250dp"/>
+    <ProgressBar
+        android:id="@+id/carregar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="150dp"
+        android:layout_centerInParent="true"
+        android:background="@color/grey"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/conferir_jogo_layout"
+        android:visibility="gone"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Resultado"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:gravity="center"        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Concurso:"
+            android:textSize="26sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="26sp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/num_concurso"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/cfb1"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:gravity="center"
+            tools:text="16"
+            android:elevation="5dp"
+            android:textStyle="bold"
+            android:background="@drawable/bola_circle"
+
+            />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/cfb2"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            tools:text="16"
+            android:elevation="5dp"
+            android:background="@drawable/bola_circle"
+            />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/cfb3"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:elevation="5dp"
+            android:textStyle="bold"
+            android:background="@drawable/bola_circle"
+            />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/cfb4"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            tools:text="16"
+            android:elevation="5dp"
+            android:textStyle="bold"
+            android:background="@drawable/bola_circle"
+            />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/cfb5"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            tools:text="16"
+            android:elevation="5dp"
+            android:textStyle="bold"
+            android:background="@drawable/bola_circle"
+            />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/cfb6"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            tools:text="16"
+            android:elevation="5dp"
+            android:textStyle="bold"
+            android:background="@drawable/bola_circle"
+            />
+    </LinearLayout>
+
+    <!-- Empty view is only visible when the list has no items. -->
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+
+        <TextView
+            android:id="@+id/msgparabens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="Parabéns você ganhou!!!"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/premios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="Prêmios"
+            android:gravity="center"
+            android:textSize="26sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+            <TextView
+                android:id="@+id/sena"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Sena"
+                android:layout_marginRight="35dp"
+                android:textSize="20sp"
+                />
+                <TextView
+                    android:id="@+id/senanumero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="0"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/quina"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="Quina"
+                    android:layout_marginRight="35dp"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/quinanumero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="0"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/quadra"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="Quadra"
+                    android:layout_marginRight="35dp"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/quadranumero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="0"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/msgcaixa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Atenção: O recibo de aposta original é o único comprovante que habilita a receber eventuais prêmios de loterias. Confira os dados contidos no recibo da aposta. O prazo para receber o prêmio é de 90 dias, a contar da data de sorteio do concurso."
+                android:textSize="12sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Loading indicator for user feedback between queries to USGS -->
+</LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adviewconferir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2038649645997943/6251547515"
+        />
+<!--Produção-->
+    <!--ca-app-pub-2038649645997943/6251547515-->
+</RelativeLayout>

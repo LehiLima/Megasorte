@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mega Fezinha </string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_selecionar">Selecionar</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_bolao">Bolao</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_participante">Participantes</string>
+    <string name="title_activity_conferir_jogo_">Conferir Jogo</string>
+
+    <!-- Error message when there is no internet connectivity [CHAR LIMIT=NONE] -->
+    <string name="no_internet_connection">Sem conexão com a Internet</string>
+    <string name="title_activity_conferir_jogo_manual">Conferir Jogo Manual</string>
+
+    <string name="spinner_title">Quantidade de números da aposta </string>
+    <string name="title_activity_sobre">Sobre</string>
+
+</resources>

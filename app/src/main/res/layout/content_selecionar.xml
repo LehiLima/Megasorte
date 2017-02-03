@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lehi.megasorte.selecionarActivity"
+    tools:showIn="@layout/activity_selecionar">
+
+    <!--<ListView xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/list_selecionar"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:drawSelectorOnTop="true"/>-->
+
+    <Button
+        android:id="@+id/btnGetSelected"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Marcar Todos"
+        android:textColor="#ffff"
+        android:background="#1B5E20"/>
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/list_selecionar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:scrollbars="vertical" />
+</LinearLayout>

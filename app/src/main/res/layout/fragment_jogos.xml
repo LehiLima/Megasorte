@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+              android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#1B5E20"
+        >
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:text="Quantidade de números da aposta :"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textColor="#ffffff"/>
+    <Spinner
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/spinner"
+        android:layout_weight="1"
+        android:prompt="@string/spinner_title"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        >
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/b1"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="#C8E6C9"
+            tools:text="33"
+            android:nextFocusForward="@+id/b2"
+
+            />
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/b2"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:background="#C8E6C9"
+            android:layout_marginLeft="5dp"
+            android:nextFocusForward="@+id/b3"
+            />
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/b3"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:background="#C8E6C9"
+            android:layout_marginLeft="5dp"
+            android:nextFocusForward="@+id/b4"
+            />
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/b4"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:background="#C8E6C9"
+            android:layout_marginLeft="5dp"
+            android:nextFocusForward="@+id/b5"
+            />
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/b5"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:background="#C8E6C9"
+            android:layout_marginLeft="5dp"
+            android:nextFocusForward="@+id/b6"
+            />
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/b6"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:background="#C8E6C9"
+            android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:inputType="number">
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/b7"
+            android:visibility="invisible"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="#C8E6C9"
+            android:layout_marginLeft="5dp"
+            />
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/b8"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:background="#C8E6C9"
+            android:layout_marginLeft="5dp"
+            />
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/b9"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:background="#C8E6C9"
+            android:layout_marginLeft="5dp"
+            />
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/b10"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:background="#C8E6C9"
+            android:layout_marginLeft="5dp"
+            />
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/b11"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:background="#C8E6C9"
+            android:layout_marginLeft="5dp"
+            />
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/b12"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:background="#C8E6C9"
+            android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:inputType="number"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/b13"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:inputType="number"
+            android:background="#C8E6C9"
+            android:layout_marginLeft="5dp"
+            />
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/b14"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:inputType="number"
+            android:background="#C8E6C9"
+            android:layout_marginLeft="5dp"
+
+            />
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/b15"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:inputType="number"
+            android:background="#C8E6C9"
+            android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="GERAR JOGO"
+        android:textColor="#ffff"
+        android:background="#1B5E20"
+        android:id="@+id/gerarJogo"
+        android:onClick="gerarJogo"
+        android:layout_margin="5dp"
+        ><requestFocus/></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Salvar JOGO"
+        android:textColor="#ffff"
+        android:background="#1B5E20"
+        android:id="@+id/salvar"
+        android:onClick="salvar"
+        android:layout_margin="5dp"/>
+</LinearLayout>
+<com.google.android.gms.ads.AdView
+    android:id="@+id/adview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    ads:adSize="BANNER"
+    ads:adUnitId="ca-app-pub-2038649645997943/3077755116"
+    />
+
+    <!--Propaganda de Teste-->
+    <!--ads:adUnitId="ca-app-pub-3940256099942544/6300978111"-->
+</RelativeLayout>
